@@ -241,8 +241,8 @@
       async function main(){        
         res = await Load('Load Account',EnterInfo) ;
         allAccountData = JSON.parse(res.result) ;
-        console.log(allAccountData);
         var allTransactions = allAccountData['transactions'] ;
+        allTransactions.reverse();
         var allLoans = allAccountData['Loans'] ;
 
 
