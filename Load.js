@@ -15,6 +15,10 @@ async function Load(CMD,info="10",obj={}){
         return data ;
 
 }
+async function LogIpAdress(){
+  await fetch('https://hidebanck-cloudserves.onrender.com/get-ip');
+  return ;
+}
 function IND(arr,att,val){
   for(let i = 0 ; i < arr.length ; i++){
     if(arr[i][att]==val){
