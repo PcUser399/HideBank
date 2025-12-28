@@ -53,9 +53,9 @@
             </div>
           </div>
         </div>
-        <div class="employees-interference-main-section">
+        <div class="employees-interference-main-section" style="padding-top: 60px;">
 
-          <div class="upper-section" style="grid-template-columns: 2fr 1fr 1fr 1fr">
+          <div class="upper-section tr hiddenView" style="grid-template-columns: 2fr 1fr 1fr 1fr">
             <div class="employee-up-conatiner">
 
               <div class="img-container" id="lala">
@@ -242,6 +242,7 @@
       </section>
     </div>
     <script src="Load.js"></script> 
+    <script src="elAnScroll.js"></script>
     <script>
       let params = new URLSearchParams(window.location.search);
       let EnterInfo = JSON.parse(params.get("value")); // EnterInfo = [CustomerId,AccountNumber] both entered from login or sign in 
@@ -400,7 +401,7 @@
           im = el.img ;
           console.log(im)
           htmlStr = `
-            <div class="w-full p-3 gbt" onclick="goToCustomerAccountAsAnEmployee('${el.number}')">
+            <div class="w-full p-3 gbt tr hiddenView" id="${el.number}" onclick="goToCustomerAccountAsAnEmployee('${el.number}')">
               <div class="px-6 py-8 border border-gray-800 rounded-5xl darkBk">
                 <div class="flex flex-wrap items-center -m-3 mb-3">
                   <div class="w-auto p-3"><img src="images/${im}.png" alt=""/ style="height:50px;width:50px;border-radius:50px;"></div>
@@ -436,6 +437,7 @@
             </div>
           `;
           document.getElementById('section'+((ind%4)+1)).insertAdjacentHTML("beforeend", htmlStr);
+          observer.observe(document.getElementById(el.number));
         })
 
       }

@@ -45,12 +45,12 @@
             </div>
           </div>
         </div>
-        <div class="customers-interference-main-section">
+        <div class="customers-interference-main-section" style="padding-top: 100px;">
 
           <!-- <div class="customer-name">Mahdi Turki</div>
           <div class="display-account-name">Account holder name : md123</div>
           <div class="balance-container">Balance :&nbsp 1500 TND</div> -->
-          <div class="upper-section">
+          <div class="upper-section tr hiddenView">
             <div class="customer-up-conatiner pad">
               <div class="upper-part">
                 Balance : 
@@ -93,7 +93,7 @@
           </div>
 
 
-          <div class="Lower-section">
+          <div class="Lower-section tr hiddenView">
 
             <div class="T-container">
 
@@ -138,7 +138,7 @@
           </div>
 
         </div>
-      <section class="py-12">
+      <section class="py-12 tr hiddenView">
         <div class="container px-4 mx-auto">
           <div class="relative pt-20 px-4 bg-gray-900 bg-opacity-20 overflow-hidden rounded-6xl">
             <div class="text-center md:max-w-xl mx-auto removed pb-20"><span class="inline-block mb-4 text-sm text-green-400 font-medium tracking-tighter">Hide Bank</span>
@@ -217,6 +217,7 @@
       </section>
     </div>
     <script src="Load.js"></script>
+    <script src="elAnScroll.js"></script>
     <script>
       let params = new URLSearchParams(window.location.search);
       let EnterInfo = JSON.parse(params.get("value")); // EnterInfo = [CustomerId,AccountNumber] both entered from login or sign in 

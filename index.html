@@ -15,7 +15,7 @@
   <body class="antialiased bg-body text-body font-body">
     <div>
       <section class="relative overflow-hidden" x-data="{ mobileNavOpen: false }">
-        <div class="container px-4 mx-auto">
+        <div class="container px-4 mx-auto mgBt">
           <div class="flex items-center justify-between pt-6 -m-2">
             <div class="w-auto p-2">
               <div class="flex flex-wrap items-center">
@@ -75,21 +75,21 @@
           </nav>
         </div>
         <div class="relative pt-20 lg:pt-28">
-          <div class="relative z-10 container px-4 mx-auto">
-            <div class="relative mb-24 text-center md:max-w-4xl mx-auto"><img class="absolute top-44 -left-36" src="template-assets/images/headers/star2.svg" alt=""/><img class="absolute top-10 -right-36" src="template-assets/images/headers/star2.svg" alt=""/><span class="inline-block mb-2.5 text-sm text-green-400 font-medium tracking-tighter">Best Bank System</span>
-              <h1 class="font-heading mb-10 text-7xl lg:text-8xl xl:text-10xl text-white tracking-tighter">Welcome to the Banking Management System</h1><a onclick="(document.getElementById('interference-container')).scrollIntoView({ behavior: 'smooth', block: 'center' })" class="inline-block px-8 py-4 tracking-tighter bg-green-400 hover:bg-green-500 text-black focus:ring-4 focus:ring-green-500 focus:ring-opacity-40 rounded-full transition duration-300" style="cursor: pointer;">Start now</a>
+          <div class="relative z-10 container px-4 mx-auto tr hiddenView">
+            <div class="relative mb-24 text-center md:max-w-4xl mx-auto"><img class="absolute top-44 -left-36 stars" src="template-assets/images/headers/star2.svg" alt=""/><img class="absolute top-10 -right-36 stars2" src="template-assets/images/headers/star2.svg" alt=""/><span class="inline-block mb-2.5 text-sm text-green-400 font-medium tracking-tighter ">Best Bank System</span>
+              <h1 class="font-heading mb-10 text-7xl lg:text-8xl xl:text-10xl text-white tracking-tighter">Welcome to the Banking Management System</h1><a onclick="(document.getElementById('interference-container')).scrollIntoView({ behavior: 'smooth', block: 'center' })" class="inline-block px-8 py-4 tracking-tighter bg-green-400 hover:bg-green-500 text-black focus:ring-4 focus:ring-green-500 focus:ring-opacity-40 rounded-full transition duration-300 " style="cursor: pointer;">Start now</a>
             </div>
-            <div class="relative max-w-max mx-auto"><img src="template-assets/images/headers/card-half.png" alt=""/><img class="absolute top-7 -right-64" src="template-assets/images/headers/star.svg" alt=""/></div>
+            <div class="relative max-w-max mx-auto"><img src="template-assets/images/headers/card-half.png" alt=""/><img class="absolute top-7 -right-64 stars" src="template-assets/images/headers/star.svg" alt=""/></div>
           </div>
         </div><img class="absolute top-0 left-48" src="template-assets/images/headers/layer-blur.svg" alt=""/><img class="absolute bottom-0 right-0" src="template-assets/images/headers/lines2.svg" alt=""/>
       </section>
       <section class="pt-20 pb-24 bg-blueGray-950">
         <div class="container px-4 mx-auto">
-          <div class="text-center"><span class="inline-block mb-4 text-sm text-green-400 font-medium tracking-tighter">Choose us</span>
+          <div class="text-center hiddenView tr" id="notSure"><span class="inline-block mb-4 text-sm text-green-400 font-medium tracking-tighter">Choose us</span>
             <h2 class="font-heading mb-6 text-7xl lg:text-8xl text-white tracking-8xl md:max-w-md mx-auto">Please chose the Interference</h2>
             <p class="mb-20 text-gray-300 md:max-w-md mx-auto">HIDE Bank is a complete digital banking environment for managing accounts, loans, and transactions. Designed for clarity and reliability, it supports both customers and employees seamlessly.</p>
           </div>
-          <div class="flex flex-wrap -m-4" id="interference-container">
+          <div class="flex flex-wrap -m-4 tr hiddenView" id="interference-container">
             <div style="cursor: pointer;" class="w-full md:w-1/2 lg:w-1/3 p-4" onclick="window.location.href = 'customerlogin.html'">
               <div class="relative mb-8 overflow-hidden rounded-5xl"><img class="w-full transform hover:scale-125 transition duration-1000" src="template-assets/images/cards/bg-image1.png" alt=""/>
                 <div class="absolute bottom-0 left-0 w-full bg-gradient-card p-8"><span class="inline-block mb-4 text-sm text-green-400 font-medium tracking-tighter">Features</span>                  <a class="group inline-block max-w-sm" href="#">
@@ -116,12 +116,12 @@
       </section>
       <section class="relative py-24 overflow-hidden">
         <div class="container px-4 mx-auto">
-          <div class="mb-20 md:max-w-xl text-center mx-auto"><span class="inline-block mb-4 text-sm text-green-400 font-medium tracking-tighter">Core Card</span>
+          <div class="mb-20 md:max-w-xl text-center mx-auto tr hiddenView"><span class="inline-block mb-4 text-sm text-green-400 font-medium tracking-tighter">Core Card</span>
             <h2 class="font-heading text-7xl lg:text-8xl text-white tracking-tighter-xl">Features</h2>
           </div>
-          <div class="relative mb-10 py-20 px-16 bg-gradient-radial-dark overflow-hidden border border-gray-900 border-opacity-30 rounded-5xl">
+          <div class="relative mb-10 py-20 px-16 bg-gradient-radial-dark overflow-hidden border border-gray-900 border-opacity-30 rounded-5xl tr hiddenView">
             <div class="max-w-6xl mx-auto">
-              <div class="relative z-10 flex flex-wrap items-center -m-8">
+              <div class="relative z-10 flex flex-wrap items-center -m-8 tr hiddenView">
                 <div class="w-full md:w-1/2 p-8">
                   <div class="max-w-md mx-auto text-center">
                     <h2 class="mb-6 text-7xl text-white tracking-tighter-xl">General Features</h2>
@@ -132,7 +132,7 @@
               </div>
             </div><img class="absolute bottom-0 left-0" src="template-assets/images/features/bg-gray.png" alt=""/>
           </div>
-          <div class="flex flex-wrap -m-5">
+          <div class="flex flex-wrap -m-5 tr hiddenView">
             <div class="w-full md:w-1/2 p-5">
               <div class="relative px-16 pt-14 pb-16 h-full bg-gradient-radial-dark overflow-hidden border border-gray-900 border-opacity-30 rounded-5xl"><img class="mb-14" src="template-assets/images/features/cards.png" alt=""/>
                 <div class="relative z-10 max-w-sm text-center mx-auto">
@@ -219,7 +219,7 @@
       </section>
       <section class="relative py-24 overflow-hidden">
         <div class="container px-4 mx-auto">
-          <div class="flex flex-wrap items-center -m-8">
+          <div class="flex flex-wrap items-center -m-8 tr hiddenView">
             <div class="w-full md:w-1/2 p-8">
               <div class="relative z-10 md:max-w-md"><span class="inline-block mb-4 text-sm text-green-400 font-medium tracking-tighter">Secure Access</span>
                 <h2 class="font-heading mb-6 text-6xl md:text-7xl text-white tracking-tighter-xl">Secure Access for all</h2>
@@ -235,7 +235,7 @@
           </div>
         </div><img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="template-assets/images/features/bg-blur.png" alt=""/>
       </section>
-      <section class="relative py-24 overflow-hidden" x-data="{ showContent: false }">
+      <section class="relative py-24 overflow-hidden tr hiddenView" x-data="{ showContent: false }">
         <div class="container px-4 mx-auto">
           <div class="text-center"><span class="inline-block mb-4 text-sm text-green-400 font-medium tracking-tighter">24/7 Serves</span>
             <h2 class="font-heading mb-6 text-7xl lg:text-8xl text-white tracking-8xl md:max-w-md mx-auto">Hide Bank is built to serve you</h2>
@@ -245,7 +245,7 @@
         </div>
       </section>
       
-      <section class="py-12">
+      <section class="py-12 tr hiddenView">
         <div class="container px-4 mx-auto">
           <div class="relative pt-20 px-4 bg-gray-900 bg-opacity-20 overflow-hidden rounded-6xl">
             <div class="text-center md:max-w-xl mx-auto removed pb-20"><span class="inline-block mb-4 text-sm text-green-400 font-medium tracking-tighter">Hide Bank</span>
@@ -324,8 +324,9 @@
       </section>
     </div>
     <script src="Load.js"></script>
+    <script src="elAnScroll.js"></script>
     <script>
-      LogIpAdress();
+      LogIpAdress();   
     </script>
   </body>
 </html>

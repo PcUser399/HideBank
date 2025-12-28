@@ -15,7 +15,7 @@
   <body class="antialiased bg-body text-body font-body">
     <div>
       <section x-data="{ mobileNavOpen: false }">
-        <div class="container px-4 mx-auto">
+        <div class="container px-4 mx-auto mgBt">
           <div class="flex items-center justify-between pt-5 pb-2.5 -m-2">
             <div class="w-auto p-2">
               <div class="flex flex-wrap items-center">
@@ -75,7 +75,7 @@
           </nav>
         </div>
       </section>
-      <section class="overflow-hidden">
+      <section class="overflow-hidden tr hiddenView">
         <div class="flex flex-wrap -m-8">
           <div class="w-full md:w-1/2 p-8">
             <div class="px-4 pt-10 md:pb-40 max-w-lg mx-auto"><a class="inline-block mb-36" href="#">                </a>              
@@ -194,6 +194,7 @@
       </section>
     </div>
     <script src="Load.js"></script>
+    <script src="elAnScroll.js"></script>
     <script>
       let allEmployees ;
       main();

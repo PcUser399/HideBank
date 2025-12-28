@@ -45,7 +45,7 @@
             </div>
           </div>
         </div>
-        <div class="statistics-main">
+        <div class="statistics-main tr hiddenView" style="margin-top: 60px;padding-top: 40px;">
             <div class="container-statistics">
               <div class="st-title">
                 <div style="color:rgb(35, 114, 167) ;">  Loans </div> <div class="st-sp">Statistics</div>
@@ -378,6 +378,28 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="Load.js"></script>
     <script>
+      setTimeout(()=>window.scrollTo(0,0),50);
+      const observer = new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                let el = entry.target;
+                let delay = parseInt(el.dataset.delay) || 0;
+                setTimeout(() => {
+                  el.classList.replace("hiddenView", "show");
+                }, delay);
+                observer.unobserve(el); // stop observing after shown
+              }
+            });
+          },
+          { threshold: 0.075 }
+      );
+
+        document.querySelectorAll(".hiddenView").forEach((el)=>{
+          observer.observe(el);
+        })
+
+
       let allEmployees ;
       let allMonths = [
         'Jan', 'Feb', 'Mar', 'Apr',

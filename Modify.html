@@ -15,7 +15,7 @@
   <body class="antialiased bg-body text-body font-body">
     <div>
       <section x-data="{ mobileNavOpen: false }">
-        <div class="container px-4 mx-auto">
+        <div class="container px-4 mx-auto mgBt">
           <div class="flex items-center justify-between pt-5 pb-2.5 -m-2">
             <div class="w-auto p-2">
               <div class="flex flex-wrap items-center">
@@ -77,7 +77,7 @@
         </div>
       </section>
       <section class="overflow-hidden">
-        <div class="flex flex-wrap -m-8" style="justify-content:center ;">
+        <div class="flex flex-wrap -m-8 tr hiddenView" style="margin-top: 0px;justify-content:center ;">
           <div class="w-full md:w-1/2 p-8" style="border-radius: 100px;border: 2px solid gray;margin-top: calc(2vh + 2vw);margin-bottom: calc(2vh + 2vw);">
             <div class="px-4 pt-10 md:pb-40 max-w-lg mx-auto"><a class="inline-block mb-36" href="#">                </a>              
               <div class="text-center mx-auto">
@@ -202,6 +202,7 @@
       </section>
     </div>
     <script src="Load.js"></script>
+    <script src="elAnScroll.js"></script>
     <Script>
       let params = new URLSearchParams(window.location.search);
       let EnterInfo = JSON.parse(params.get("value"));

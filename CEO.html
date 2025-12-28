@@ -16,7 +16,7 @@
   <body class="antialiased bg-body text-body font-body">
     <div>
       <section x-data="{ mobileNavOpen: false }">
-        <div class="container px-4 mx-auto headder">
+        <div class="container px-4 mx-auto headder ">
           <div class="flex items-center justify-between pt-5 pb-2.5 -m-2" style="padding: 0 calc(2.5vh + 2.5vw); padding-top:calc(1vh + 1vw) ;padding-bottom: calc(1vh + 1vw);">            <div class="w-auto p-2">
               <div class="flex flex-wrap items-center">
                 <div class="w-auto"><a class="relative z-10 inline-block" href="index.html"><img src="images/logo.svg" style="width: calc(7.5vh + 7.5vw);"  alt=""/></a></div>
@@ -47,8 +47,10 @@
             </div>
           </div>
         </div>
-        <div class="CEO-interference-main-section">
+        <!-- <div style="height: 40px;"></div> -->
+        <div class="CEO-interference-main-section" style="padding-top: 100px !important;">
 
+        <div class="tr hiddenView" style="display: flex;flex-direction:column;justify-content: center;align-items: center;" >
           <div class="upper-section" style="display: flex;justify-content: center;align-items: center;">
             <div class="employee-up-conatiner" style="max-width: fit-content;padding: 0 calc(2vh + 2vw);">
 
@@ -109,7 +111,7 @@
             <span class="text_button">Add Employee</span>
           </button>
 
-
+        </div>
             
         <div class="Account-Display-Section" style="margin-top: calc(3vh + 3vw) ;padding-top: calc(3vh + 3vw);">
           <label class="aaa"> Employees </label>
@@ -212,6 +214,7 @@
       </section>
     </div>
     <script src="Load.js"></script>
+    <script src="elAnScroll.js"></script>
     <script>
       let allEmployees ;
       main();
@@ -242,7 +245,7 @@
             sml = 'style="font-size:calc(1vh + 1vw)"'
           }
           htmlStr = `
-            <div class="employee-profile-container" id=${el.EmployeeId}>
+            <div class="employee-profile-container tr hiddenView" id=${el.EmployeeId}>
               <div class="E-U-S">
                 <img src="images/${el.img}.png" class="EImg" style="width: calc(10vh + 10vw); height: calc(10vh + 10vw);border-radius: 100% ;">
                 <div class="right-side-employee">
@@ -309,6 +312,7 @@
 
           `;
           Esp.insertAdjacentHTML('beforeend',htmlStr);
+          observer.observe(document.getElementById(el.EmployeeId))
         })
       }
       window.updateCpp_fireEmployee = async function(EId){//work on later
